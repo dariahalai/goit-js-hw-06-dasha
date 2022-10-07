@@ -22,4 +22,6 @@ const listRowFunction = ({url,alt}) => {
 };
 const listRows = images.map(listRowFunction).join('');
 listEl.insertAdjacentHTML('beforeend',listRows);
+listEl.style.display = 'flex';
+listEl.style.gap = '20px';
 console.log(listRows);
