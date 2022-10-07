@@ -17,7 +17,7 @@ const listEl = document.querySelector('.gallery');
 const listRowFunction = ({url,alt}) => {
   return `
   <li>
-  <img src='${url}' alt='${alt}'>
+  <img src='${url}' alt='${alt}' width=400px>
   </li>`
 };
 const listRows = images.map(listRowFunction).join('');
