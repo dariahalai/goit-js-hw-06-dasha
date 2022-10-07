@@ -24,6 +24,7 @@ function createBoxes(amount){
 refs.btnCreate.addEventListener('click', ()=>{
   let amount = refs.input.value;
   createBoxes(amount);
+  refs.input.value = "";
 });
 
 refs.btnDestroy.addEventListener('click',()=>{
